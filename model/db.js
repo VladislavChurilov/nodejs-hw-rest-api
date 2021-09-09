@@ -1,8 +1,14 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
+<<<<<<< HEAD
 const uriDb = process.env.URI_DB;
 
 const db = mongoose.connect(uriDb, {
+=======
+const DB_HOST = process.env.DB_HOST;
+
+const db = mongoose.connect(DB_HOST, {
+>>>>>>> bda0a48d258d4f7eae697f5b24b3947c6cad181a
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true,
@@ -27,5 +33,8 @@ process.on("SIGINT", async () => {
     process.exit(1);
   });
 });
+<<<<<<< HEAD
 
 module.exports = db;
+=======
+>>>>>>> bda0a48d258d4f7eae697f5b24b3947c6cad181a
